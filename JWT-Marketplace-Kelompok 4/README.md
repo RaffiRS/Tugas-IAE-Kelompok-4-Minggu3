@@ -23,10 +23,10 @@ python app.py
 curl -X POST http://localhost:3000/auth/login -H "Content-Type: application/json" -d "{\"email\": \"eko@example.com\", \"password\": \"12345\"}"
 
 # 5. Get Items
-curl -X GET http://localhost:3000/items bisa
+curl -X GET http://localhost:3000/items 
 
 # 6. EndPoint
-curl -X GET http://localhost:3000/ bisa
+curl -X GET http://localhost:3000/ 
 
 #7. Update Profile
 curl -X PUT http://localhost:3000/profile -H "Content-Type: application/json" -H "Authorization: Bearer YOUR_TOKEN" -d "{\"name\": \"Bagus Updated\"}" 

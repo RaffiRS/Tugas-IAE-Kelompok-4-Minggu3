@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "e8dda01c-8874-4552-8a7b-1f3b708f3925",
+		"name": "Tugas 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45042365",
+		"_collection_link": "https://salsabilsalwaputrimaharani.postman.co/workspace/Salsabil-Salwa-Putri-Maharani's~ba86bff1-6bf0-44b0-8d36-eb6767c8be9f/collection/45042365-e8dda01c-8874-4552-8a7b-1f3b708f3925?action=share&source=collection_link&creator=45042365"
+	},
+	"item": [
+		{
+			"name": "login regist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"eko@example.com\",\r\n  \"password\": \"12345\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiZWtvQGV4YW1wbGUuY29tIiwiZXhwIjoxNzYwNTg1Mjc2fQ.aiFOlKVo0Lu1vdKjos5JMeO9DoOwBUkqFyNHltrA5Ks",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiZWtvQGV4YW1wbGUuY29tIiwiZXhwIjoxNzYwNTQzMDM1fQ.gL2b5jfO100q_s-XBFJVHKDXjEYxDtHmxHVVIRCPBW8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\": \"Eko Rudy\" }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
