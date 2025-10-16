@@ -1,4 +1,9 @@
 # Kelompok 4 - IAE
+# Anggota:
+# 1. Casta Garneta
+# 2. Putvi Indrisa Emylia Syahputri
+# 3. Salsabil Salwa Putri Maharani
+# 4. Raffi Raditya Sofwan
 
 # JWT Marketplace API (Flask Modular)
 
